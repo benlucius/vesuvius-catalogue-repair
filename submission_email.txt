@@ -1,0 +1,18 @@
+To: team@scrollprize.org
+Subject: Catalogue repair package for issues #1504 and #1516
+Public review URL: https://github.com/benlucius/vesuvius-catalogue-repair
+
+Hello Vesuvius Challenge team,
+
+I have published a small catalogue repair package for technical review addressing the previously reported issues #1504 and #1516:
+https://github.com/benlucius/vesuvius-catalogue-repair
+
+It contains four volume-shape corrections verified against the public level-0 Zarr metadata, and two volume parent-type corrections supported by the corresponding scan IDs. A seventh correction, for segment 20250910185200, is supplied separately as a proposal: it points to the segment's declared original volume and needs your provenance confirmation.
+
+The repository includes a short report, guarded JSON patches, a standard-library Python utility, source evidence metadata, validation results and verification logs. Twelve regression tests passed on the captured catalogue snapshot. The direct corrections restore four shape lookups and two parent-reference lookups; the segment proposal would restore the third parent lookup.
+
+Credit for the original reports belongs to @nerln; #1516 also credits @Bullo27 for independent shape checks. This package was prepared at my request with OpenAI Codex, including implementation and test execution. Its contribution is the reproducible repair and review material. It does not claim new scroll-reading results or original discovery of the defects.
+
+Could you review the corrections and confirm the intended parent of the segment? If this contribution is eligible for a Progress Prize, I would appreciate guidance on submitting it through the monthly form.
+
+Thank you for your time.

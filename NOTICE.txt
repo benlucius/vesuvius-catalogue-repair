@@ -1,0 +1,18 @@
+Third-party attribution
+
+The catalogue and Zarr metadata in evidence/, and the metadata retained in the corrected catalogue variants, originate from Vesuvius Challenge / Scroll Prize:
+https://vesuvius-challenge-open-data.s3.amazonaws.com/metadata.json
+https://scrollprize.org/data
+
+Exact per-object URLs, timestamps and hashes are in evidence/manifest.json. These copies are included for reproducibility and review. The original evidence payloads are unmodified after HTTP gzip decoding. Corrected variants make only the changes identified in their associated patch and validation files; serialisation whitespace differs.
+
+Original dataset licence fields are retained. The four relevant volume records specify CC BY-NC 4.0:
+https://creativecommons.org/licenses/by-nc/4.0/
+The project's website also states CC BY-NC 4.0 for its content unless otherwise specified. The MIT licence for this package's original code does not relicense third-party data or original issue reports.
+
+Original defect reports: @nerln
+https://github.com/ScrollPrize/villa/issues/1504
+https://github.com/ScrollPrize/villa/issues/1516
+Issue #1516 acknowledges @Bullo27 for independent shape verification and an audit check.
+
+This package is not an official Scroll Prize release. OpenAI Codex assisted with preparation, implementation, verification and documentation at the submitter's request. No contributor named above has been represented as endorsing this package or joining the submitter's team.

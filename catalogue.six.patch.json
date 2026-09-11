@@ -1,0 +1,228 @@
+[
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250526151718/id",
+    "value": "20250526151718"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250526151718/sample_id",
+    "value": "PHerc0500P2"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250526151718/long_id",
+    "value": "20250526151718-2.215um-0.4m-111keV-masked.zarr"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250526151718/data/0/type",
+    "value": "ome-zarr"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250526151718/data/0/origins/0/path",
+    "value": "PHerc0500P2/volumes/20250526151718-2.215um-0.4m-111keV-masked.zarr/"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250526151718/properties/shape",
+    "value": null
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250528085330/id",
+    "value": "20250528085330"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250528085330/sample_id",
+    "value": "PHerc0500P2"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250528085330/long_id",
+    "value": "20250528085330-4.317um-1.2m-111keV-masked.zarr"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250528085330/data/0/type",
+    "value": "ome-zarr"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250528085330/data/0/origins/0/path",
+    "value": "PHerc0500P2/volumes/20250528085330-4.317um-1.2m-111keV-masked.zarr/"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250528085330/properties/shape",
+    "value": null
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250820143440/id",
+    "value": "20250820143440"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250820143440/sample_id",
+    "value": "PHerc0500P2"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250820143440/long_id",
+    "value": "20250820143440-9.362um-1.2m-113keV-masked.zarr"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250820143440/data/0/type",
+    "value": "ome-zarr"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250820143440/data/0/origins/0/path",
+    "value": "PHerc0500P2/volumes/20250820143440-9.362um-1.2m-113keV-masked.zarr/"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0500P2/volumes/20250820143440/properties/shape",
+    "value": null
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0343P/volumes/20250521134555/id",
+    "value": "20250521134555"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0343P/volumes/20250521134555/sample_id",
+    "value": "PHerc0343P"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0343P/volumes/20250521134555/long_id",
+    "value": "20250521134555-8.640um-1.2m-116keV-masked.zarr"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0343P/volumes/20250521134555/data/0/type",
+    "value": "ome-zarr"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0343P/volumes/20250521134555/data/0/origins/0/path",
+    "value": "PHerc0343P/volumes/20250521134555-8.640um-1.2m-116keV-masked.zarr/"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0343P/volumes/20250521134555/properties/shape",
+    "value": null
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0009B/volumes/20250521125136/id",
+    "value": "20250521125136"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0009B/volumes/20250521125136/sample_id",
+    "value": "PHerc0009B"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0009B/volumes/20250521125136/scan_id",
+    "value": "20250509053741"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0009B/scans/20250509053741/id",
+    "value": "20250509053741"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0009B/volumes/20250521125136/creation/derived_from/id",
+    "value": "20250509053741"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0009B/volumes/20250521125136/creation/derived_from/type",
+    "value": "volume"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0009B/volumes/20250820154339/id",
+    "value": "20250820154339"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0009B/volumes/20250820154339/sample_id",
+    "value": "PHerc0009B"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0009B/volumes/20250820154339/scan_id",
+    "value": "20250718080859"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0009B/scans/20250718080859/id",
+    "value": "20250718080859"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0009B/volumes/20250820154339/creation/derived_from/id",
+    "value": "20250718080859"
+  },
+  {
+    "op": "test",
+    "path": "/samples/PHerc0009B/volumes/20250820154339/creation/derived_from/type",
+    "value": "volume"
+  },
+  {
+    "op": "replace",
+    "path": "/samples/PHerc0500P2/volumes/20250526151718/properties/shape",
+    "value": [
+      28096,
+      18209,
+      18209
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/samples/PHerc0500P2/volumes/20250528085330/properties/shape",
+    "value": [
+      15838,
+      9423,
+      9423
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/samples/PHerc0500P2/volumes/20250820143440/properties/shape",
+    "value": [
+      7057,
+      4196,
+      4196
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/samples/PHerc0343P/volumes/20250521134555/properties/shape",
+    "value": [
+      5398,
+      5057,
+      5057
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/samples/PHerc0009B/volumes/20250521125136/creation/derived_from/type",
+    "value": "scan"
+  },
+  {
+    "op": "replace",
+    "path": "/samples/PHerc0009B/volumes/20250820154339/creation/derived_from/type",
+    "value": "scan"
+  }
+]

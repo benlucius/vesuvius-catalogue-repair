@@ -1,0 +1,11 @@
+# Large catalogue snapshots / generated outputs
+/evidence/metadata.original.json
+/metadata.six.corrected.json
+/metadata.seven.proposed.json
+/fresh_evidence/
+/reviewed*.json
+/*.patch.generated.json
+
+# Python
+__pycache__/
+*.pyc

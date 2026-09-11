@@ -1,0 +1,34 @@
+SEPTEMBER 2026 PROGRESS PRIZES - TECHNICAL DRAFT
+Checked: 10 September 2026.
+Form: https://docs.google.com/forms/d/e/1FAIpQLScNBMj25FMnphngRG1Ciryv_2_Mkdq2YPJOD9WqPfZExII2iQ/viewform
+Rules: https://scrollprize.org/prizes#progress-prizes
+
+This is not a submitted application. Adapt the technical answer in your own words before submitting. Do not claim personal code review, original discovery, hands-on scroll-tool use or maintainer acceptance unless those things have actually happened.
+
+EMAIL / FULL NAME
+Supply your own details in the form.
+
+TEAM DESCRIPTION - DRAFT
+Individual submission, with OpenAI Codex assistance for implementation, evidence collection, testing and documentation. The original defect reports are by @nerln, with independent shape checks by @Bullo27 acknowledged in issue #1516. These acknowledgements do not imply that those contributors are members of my team.
+
+DISCORD NAME
+Optional according to the form checked on 10 September 2026; provide only if applicable.
+
+PUBLIC CONTRIBUTION URL
+https://github.com/benlucius/vesuvius-catalogue-repair
+
+CONTRIBUTION - TECHNICAL DRAFT
+I am submitting a small, AI-assisted repair and verification package for previously reported Vesuvius catalogue issues #1504 and #1516.
+
+(1) Data: the official metadata.json snapshot retrieved on 10 September 2026; level-0 Zarr metadata for PHerc0500P2 volumes 20250526151718, 20250528085330 and 20250820143440, and PHerc0343P volume 20250521134555; parent references for PHerc0009B volumes 20250521125136 and 20250820154339 and segment 20250910185200.
+
+(2) Benefit: the direct repairs let catalogue consumers retrieve four previously absent array shapes and resolve two incorrectly typed scan-parent references. This removes specific metadata inconsistencies, but there is no measured improvement to scroll-reading probability, segmentation, ink detection or recovered text, and no demonstrated community adoption yet. I recognise that this is a limited maintenance contribution.
+
+(3) Enabled behaviour: the four dimensions can be read correctly from the catalogue itself, without a separate per-volume Zarr metadata fallback; two typed parent lookups now resolve. A separate, opt-in segment proposal points to the segment's already declared original volume and would restore a third lookup. Its historical provenance requires maintainer confirmation. The raw array dimensions were already publicly available; this contribution does not discover new data.
+
+(4) Evidence: captured public responses with URLs, retrieval times and SHA-256 hashes; before/after catalogue-consumer audit; guarded JSON patches; a standard-library utility; full-document comparison proving exactly six direct field changes or seven including the proposal; idempotence verification; twelve passing regression tests and their recorded execution log. Exact hashes for the large captured/generated catalogue snapshots are published in SNAPSHOT_DATA.md.
+
+The original reports belong to @nerln. Issue #1516 also credits @Bullo27 with independent shape verification. The added contribution is the repeatable repair implementation and evidence package, with conservative handling of the segment's ambiguous parent. OpenAI Codex assisted with both code and documentation at my request.
+
+TERMS
+Read and decide whether to accept the current terms yourself. This draft does not accept terms on your behalf. The included original code is offered under MIT; third-party data retain their original licences and attribution.
