@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "sources": {
+    "metadata.original.json": {
+      "url": "https://vesuvius-challenge-open-data.s3.amazonaws.com/metadata.json",
+      "retrieved_utc": "2026-09-10T16:36:42.217859+00:00",
+      "etag": "\"b92f43acabc3bff88c4ac74bd0ce43f6\"",
+      "last_modified": "Mon, 07 Sep 2026 09:15:12 GMT",
+      "content_encoding": "gzip",
+      "response_bytes": 1194487,
+      "response_sha256": "d3ee4b7d01c9b3c471bc214ce433e41d644832ab09e2331e721b4ab662160e9a",
+      "decoded_bytes": 15642382,
+      "decoded_sha256": "2551bb522f9462d001462243baa46739442899cf14d10c1405708e0f898f667f"
+    },
+    "PHerc0500P2_20250526151718.zarray.json": {
+      "url": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0500P2/volumes/20250526151718-2.215um-0.4m-111keV-masked.zarr/0/.zarray",
+      "retrieved_utc": "2026-09-10T16:36:55.804525+00:00",
+      "etag": "\"61641c440824885cd17a00549efde89d\"",
+      "last_modified": "Wed, 04 Mar 2026 12:56:12 GMT",
+      "content_encoding": null,
+      "response_bytes": 241,
+      "response_sha256": "15bd51431414666475d8d895ed0d51b6c96d85f6b52f7adf514459db85a203b5",
+      "decoded_bytes": 241,
+      "decoded_sha256": "15bd51431414666475d8d895ed0d51b6c96d85f6b52f7adf514459db85a203b5"
+    },
+    "PHerc0500P2_20250528085330.zarray.json": {
+      "url": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0500P2/volumes/20250528085330-4.317um-1.2m-111keV-masked.zarr/0/.zarray",
+      "retrieved_utc": "2026-09-10T16:37:09.273126+00:00",
+      "etag": "\"827db4ad827ae7761c8df99f7afb0b11\"",
+      "last_modified": "Wed, 04 Mar 2026 12:56:14 GMT",
+      "content_encoding": null,
+      "response_bytes": 239,
+      "response_sha256": "6edff1fcef90fe905740176f190e59409efdbca1d754030c2662d7adc7dde49f",
+      "decoded_bytes": 239,
+      "decoded_sha256": "6edff1fcef90fe905740176f190e59409efdbca1d754030c2662d7adc7dde49f"
+    },
+    "PHerc0500P2_20250820143440.zarray.json": {
+      "url": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0500P2/volumes/20250820143440-9.362um-1.2m-113keV-masked.zarr/0/.zarray",
+      "retrieved_utc": "2026-09-10T16:37:21.540938+00:00",
+      "etag": "\"0c6ec9ed03056ad20913d25e9c45ee6b\"",
+      "last_modified": "Wed, 04 Mar 2026 12:56:15 GMT",
+      "content_encoding": null,
+      "response_bytes": 238,
+      "response_sha256": "9b8f1fe7978dc7dda432b1e2a08eee74c1b5c976f61d69840ffbb9dfcc54fe9c",
+      "decoded_bytes": 238,
+      "decoded_sha256": "9b8f1fe7978dc7dda432b1e2a08eee74c1b5c976f61d69840ffbb9dfcc54fe9c"
+    },
+    "PHerc0343P_20250521134555.zarray.json": {
+      "url": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0343P/volumes/20250521134555-8.640um-1.2m-116keV-masked.zarr/0/.zarray",
+      "retrieved_utc": "2026-09-10T16:37:34.417832+00:00",
+      "etag": "\"5cd48f6555ca343b45eea2c39489409d\"",
+      "last_modified": "Wed, 04 Mar 2026 12:36:07 GMT",
+      "content_encoding": null,
+      "response_bytes": 238,
+      "response_sha256": "8b4ef9c53385287f9412318519362d0af381a97bcecc4d15122b8eb888bc842c",
+      "decoded_bytes": 238,
+      "decoded_sha256": "8b4ef9c53385287f9412318519362d0af381a97bcecc4d15122b8eb888bc842c"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "verified": true,
+  "segment_proposal_included": false,
+  "semantic_change_count": 6,
+  "changed_paths": [
+    "/samples/PHerc0009B/volumes/20250521125136/creation/derived_from/type",
+    "/samples/PHerc0009B/volumes/20250820154339/creation/derived_from/type",
+    "/samples/PHerc0343P/volumes/20250521134555/properties/shape",
+    "/samples/PHerc0500P2/volumes/20250526151718/properties/shape",
+    "/samples/PHerc0500P2/volumes/20250528085330/properties/shape",
+    "/samples/PHerc0500P2/volumes/20250820143440/properties/shape"
+  ],
+  "idempotent": true,
+  "before": {
+    "selected_shapes_matching_arrays": 0,
+    "selected_references_resolving": 0,
+    "catalogue_volume_count": 71,
+    "catalogue_null_volume_shapes": 4,
+    "shapes": [
+      {
+        "sample": "PHerc0500P2",
+        "volume": "20250526151718",
+        "catalogue_shape": null,
+        "array_shape": [28096,18209,18209],
+        "matches_array": false
+      },
+      {
+        "sample": "PHerc0500P2",
+        "volume": "20250528085330",
+        "catalogue_shape": null,
+        "array_shape": [15838,9423,9423],
+        "matches_array": false
+      },
+      {
+        "sample": "PHerc0500P2",
+        "volume": "20250820143440",
+        "catalogue_shape": null,
+        "array_shape": [7057,4196,4196],
+        "matches_array": false
+      },
+      {
+        "sample": "PHerc0343P",
+        "volume": "20250521134555",
+        "catalogue_shape": null,
+        "array_shape": [5398,5057,5057],
+        "matches_array": false
+      }
+    ],
+    "references": [
+      {"kind":"volumes","id":"20250521125136","reference":{"type":"volume","id":"20250509053741"},"resolves":false},
+      {"kind":"volumes","id":"20250820154339","reference":{"type":"volume","id":"20250718080859"},"resolves":false},
+      {"kind":"segments","id":"20250910185200","reference":{"type":"volume","id":"20250718080859"},"resolves":false}
+    ]
+  },
+  "after": {
+    "selected_shapes_matching_arrays": 4,
+    "selected_references_resolving": 2,
+    "catalogue_volume_count": 71,
+    "catalogue_null_volume_shapes": 0,
+    "shapes": [
+      {"sample":"PHerc0500P2","volume":"20250526151718","catalogue_shape":[28096,18209,18209],"array_shape":[28096,18209,18209],"matches_array":true},
+      {"sample":"PHerc0500P2","volume":"20250528085330","catalogue_shape":[15838,9423,9423],"array_shape":[15838,9423,9423],"matches_array":true},
+      {"sample":"PHerc0500P2","volume":"20250820143440","catalogue_shape":[7057,4196,4196],"array_shape":[7057,4196,4196],"matches_array":true},
+      {"sample":"PHerc0343P","volume":"20250521134555","catalogue_shape":[5398,5057,5057],"array_shape":[5398,5057,5057],"matches_array":true}
+    ],
+    "references": [
+      {"kind":"volumes","id":"20250521125136","reference":{"type":"scan","id":"20250509053741"},"resolves":true},
+      {"kind":"volumes","id":"20250820154339","reference":{"type":"scan","id":"20250718080859"},"resolves":true},
+      {"kind":"segments","id":"20250910185200","reference":{"type":"volume","id":"20250718080859"},"resolves":false}
+    ]
+  }
+}

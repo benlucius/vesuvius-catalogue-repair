@@ -1,0 +1,65 @@
+Executed UTC: 2026-09-10T16:38:42.518610+00:00
+Python: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+Platform: Linux-6.18.35-x86_64-with-glibc2.39
+Scope: real catalogue and Zarr metadata; no CT voxel processing.
+
+$ python3 repair_catalogue.py check --catalogue evidence/metadata.original.json
+exit_code=1
+{
+  "selected_shapes_matching_arrays": 0,
+  "selected_references_resolving": 0,
+  "catalogue_volume_count": 71,
+  "catalogue_null_volume_shapes": 4,
+  "shapes": [
+    {"sample":"PHerc0500P2","volume":"20250526151718","catalogue_shape":null,"array_shape":[28096,18209,18209],"matches_array":false},
+    {"sample":"PHerc0500P2","volume":"20250528085330","catalogue_shape":null,"array_shape":[15838,9423,9423],"matches_array":false},
+    {"sample":"PHerc0500P2","volume":"20250820143440","catalogue_shape":null,"array_shape":[7057,4196,4196],"matches_array":false},
+    {"sample":"PHerc0343P","volume":"20250521134555","catalogue_shape":null,"array_shape":[5398,5057,5057],"matches_array":false}
+  ],
+  "references": [
+    {"kind":"volumes","id":"20250521125136","reference":{"type":"volume","id":"20250509053741"},"resolves":false},
+    {"kind":"volumes","id":"20250820154339","reference":{"type":"volume","id":"20250718080859"},"resolves":false},
+    {"kind":"segments","id":"20250910185200","reference":{"type":"volume","id":"20250718080859"},"resolves":false}
+  ]
+}
+
+$ python3 repair_catalogue.py apply --catalogue evidence/metadata.original.json --out metadata.six.corrected.json --patch catalogue.six.patch.json
+exit_code=0
+{"replacements": 6, "segment_proposal_included": false}
+
+$ python3 repair_catalogue.py verify --catalogue evidence/metadata.original.json --after metadata.six.corrected.json
+exit_code=0
+verified=true semantic_change_count=6 idempotent=true selected_shapes_matching_arrays=4 selected_references_resolving=2
+
+$ python3 repair_catalogue.py apply --catalogue evidence/metadata.original.json --out metadata.seven.proposed.json --patch catalogue.seven.proposed.patch.json --include-segment-proposal
+exit_code=0
+{"replacements": 7, "segment_proposal_included": true}
+
+$ python3 repair_catalogue.py verify --catalogue evidence/metadata.original.json --after metadata.seven.proposed.json --include-segment-proposal
+exit_code=0
+verified=true semantic_change_count=7 idempotent=true selected_shapes_matching_arrays=4 selected_references_resolving=3
+
+$ python3 repair_catalogue.py check --catalogue metadata.seven.proposed.json
+exit_code=0
+selected_shapes_matching_arrays=4 selected_references_resolving=3 catalogue_null_volume_shapes=0
+
+$ python3 -m unittest -v test_repair
+exit_code=0
+
+test_changed_reference_identity_aborts (test_repair.RealCatalogueRegression.test_changed_reference_identity_aborts) ... ok
+test_cli_refuses_to_overwrite_an_existing_output (test_repair.RealCatalogueRegression.test_cli_refuses_to_overwrite_an_existing_output) ... ok
+test_conflicting_shape_aborts_without_mutating_input (test_repair.RealCatalogueRegression.test_conflicting_shape_aborts_without_mutating_input) ... ok
+test_corrupted_evidence_is_rejected (test_repair.RealCatalogueRegression.test_corrupted_evidence_is_rejected) ... ok
+test_default_repairs_six_and_preserves_segment (test_repair.RealCatalogueRegression.test_default_repairs_six_and_preserves_segment) ... ok
+test_generated_patch_matches_corrected_document (test_repair.RealCatalogueRegression.test_generated_patch_matches_corrected_document) ... ok
+test_live_fixture_has_the_seven_reported_failures (test_repair.RealCatalogueRegression.test_live_fixture_has_the_seven_reported_failures) ... ok
+test_opt_in_segment_uses_the_declared_original_volume (test_repair.RealCatalogueRegression.test_opt_in_segment_uses_the_declared_original_volume) ... ok
+test_repeat_repair_has_no_changes (test_repair.RealCatalogueRegression.test_repeat_repair_has_no_changes) ... ok
+test_segment_proposal_rejects_changed_original_volume (test_repair.RealCatalogueRegression.test_segment_proposal_rejects_changed_original_volume) ... ok
+test_unrelated_user_metadata_survives_and_input_is_unchanged (test_repair.RealCatalogueRegression.test_unrelated_user_metadata_survives_and_input_is_unchanged) ... ok
+test_verify_detects_an_unrelated_change (test_repair.RealCatalogueRegression.test_verify_detects_an_unrelated_change) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 5.275s
+
+OK
