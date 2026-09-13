@@ -1,0 +1,40 @@
+Unmodified Villa lasagna.manager.cli, local catalogue fixtures
+Commit: be09a85035059fd83471b1632b5898c62f2c65b1
+Python: 3.12.14
+Both commands are expected to exit 0; the defect is missing displayed dimensions, not a crash.
+
+before: python -m lasagna.manager.cli volume ls --sample PHerc0343P
+SCROLL      VOLUME                                          SHAPE               VOXEL    FORMAT  PREFETCHED  ORIGINS
+----------  ----------------------------------------------  ------------------  -------  ------  ----------  -------
+PHerc0343P  20250521134555-8.640um-1.2m-116keV-masked.zarr  -                   8.64um   uint8   -           s3
+└─          20260304131111-2.215um-0.4m-111keV-masked.zarr   20714x13155x13155  2.215um  uint8   -           s3
+
+Exit status: 0
+
+before: python -m lasagna.manager.cli volume ls --sample PHerc0500P2
+SCROLL       VOLUME                                          SHAPE               VOXEL    FORMAT  PREFETCHED  ORIGINS
+-----------  ----------------------------------------------  ------------------  -------  ------  ----------  -------
+PHerc0500P2  20250526151718-2.215um-0.4m-111keV-masked.zarr  -                   2.215um  uint8   -           s3
+├─           20250528085330-4.317um-1.2m-111keV-masked.zarr  -                   4.317um  uint8   -           s3
+├─           20250820143440-9.362um-1.2m-113keV-masked.zarr  -                   9.362um  uint8   -           s3
+└─           20250821110041-0.550um-0.1m-65keV-masked.zarr    12320x10813x 3891  0.55um   uint8   -           s3
+
+Exit status: 0
+
+after_six: python -m lasagna.manager.cli volume ls --sample PHerc0343P
+SCROLL      VOLUME                                          SHAPE               VOXEL    FORMAT  PREFETCHED  ORIGINS
+----------  ----------------------------------------------  ------------------  -------  ------  ----------  -------
+PHerc0343P  20250521134555-8.640um-1.2m-116keV-masked.zarr    5398x 5057x 5057  8.64um   uint8   -           s3
+└─          20260304131111-2.215um-0.4m-111keV-masked.zarr   20714x13155x13155  2.215um  uint8   -           s3
+
+Exit status: 0
+
+after_six: python -m lasagna.manager.cli volume ls --sample PHerc0500P2
+SCROLL       VOLUME                                          SHAPE               VOXEL    FORMAT  PREFETCHED  ORIGINS
+-----------  ----------------------------------------------  ------------------  -------  ------  ----------  -------
+PHerc0500P2  20250526151718-2.215um-0.4m-111keV-masked.zarr   28096x18209x18209  2.215um  uint8   -           s3
+├─           20250528085330-4.317um-1.2m-111keV-masked.zarr   15838x 9423x 9423  4.317um  uint8   -           s3
+├─           20250820143440-9.362um-1.2m-113keV-masked.zarr    7057x 4196x 4196  9.362um  uint8   -           s3
+└─           20250821110041-0.550um-0.1m-65keV-masked.zarr    12320x10813x 3891  0.55um   uint8   -           s3
+
+Exit status: 0

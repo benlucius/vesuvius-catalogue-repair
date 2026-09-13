@@ -1,0 +1,56 @@
+{
+  "upstream_commit": "be09a85035059fd83471b1632b5898c62f2c65b1",
+  "python": "3.12.14",
+  "node": "v24.19.0",
+  "input_sha256": {
+    "before": "2551bb522f9462d001462243baa46739442899cf14d10c1405708e0f898f667f",
+    "after_six": "8064bdef324d9a595c2d203a65563fe644ec6c222108c9784929145bdfb2b75b"
+  },
+  "volume_count": 71,
+  "volumes_with_dimensions_before": 67,
+  "volumes_with_dimensions_after": 71,
+  "changed_shapes": [
+    {
+      "sample": "PHerc0343P",
+      "volume": "20250521134555",
+      "before": [],
+      "after": [
+        5398,
+        5057,
+        5057
+      ]
+    },
+    {
+      "sample": "PHerc0500P2",
+      "volume": "20250526151718",
+      "before": [],
+      "after": [
+        28096,
+        18209,
+        18209
+      ]
+    },
+    {
+      "sample": "PHerc0500P2",
+      "volume": "20250528085330",
+      "before": [],
+      "after": [
+        15838,
+        9423,
+        9423
+      ]
+    },
+    {
+      "sample": "PHerc0500P2",
+      "volume": "20250820143440",
+      "before": [],
+      "after": [
+        7057,
+        4196,
+        4196
+      ]
+    }
+  ],
+  "website_index_unchanged": true,
+  "scope": "Actual Lasagna catalogue listing and website index builder only; no GPU inference, VC3D GUI run, upstream deployment, or human-use claim."
+}

@@ -1,0 +1,45 @@
+{
+  "commit": "be09a85035059fd83471b1632b5898c62f2c65b1",
+  "files": {
+    "lasagna/inference_provenance.py": {
+      "git_blob_sha": "ca75ac58922349ac13f2efa01d5992f03cad6a8b"
+    },
+    "lasagna/live_omezarr_cache.py": {
+      "git_blob_sha": "daa5cee998cca44fecb69be01af74124419e0568"
+    },
+    "lasagna/manager/__init__.py": {
+      "git_blob_sha": "e361843eac82f2b476091dd89cceca5795b7edc4"
+    },
+    "lasagna/manager/catalog.py": {
+      "git_blob_sha": "f0c51b9d6c45bdf4d8bb66cea6b7d252a09520f4"
+    },
+    "lasagna/manager/cli.py": {
+      "git_blob_sha": "79fb7fd29d0dcb43ec03071da938a784b9ef96e6"
+    },
+    "lasagna/manager/completion.py": {
+      "git_blob_sha": "05d54547aef182070261a6ea54f492f8d00d9576"
+    },
+    "lasagna/manager/config.py": {
+      "git_blob_sha": "a84efa0dad795d420be9c739763022d3b4e1b29e"
+    },
+    "lasagna/manager/open_data.py": {
+      "git_blob_sha": "b26d8815e25e544d4ddfb90d881fa82182d5d8f4"
+    },
+    "lasagna/manager/prefetch.py": {
+      "git_blob_sha": "5f876c5e8b52d56bf89ba0fbd2aeb5b890cbdf1e"
+    },
+    "lasagna/manager/runs.py": {
+      "git_blob_sha": "246ff1d6bae96f4f2bd39398627113a7fcc16310"
+    },
+    "lasagna/manager/snapshots.py": {
+      "git_blob_sha": "4fb0bab8a1cc4b075d423ef9c5ba7224472dac36"
+    },
+    "lasagna/manager/tmux.py": {
+      "git_blob_sha": "51e64f8b60d8dd2959711ccb172cb79c08d38c81"
+    },
+    "scrollprize.org/src/components/atlas/buildIndex.js": {
+      "git_blob_sha": "253dc643b43c959c028a9cbdcf55831cc1d141f3"
+    }
+  },
+  "repository": "ScrollPrize/villa"
+}

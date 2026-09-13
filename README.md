@@ -86,6 +86,12 @@ A local corrected snapshot is not a deployed fix. Patching only a generated outp
 
 The published asset digest matches the locally tested archive. A fresh download of the official catalogue and four Zarr metadata objects matched the release evidence byte for byte. All 12 regression tests passed from an extracted copy of the archive. Independent application of both packaged JSON patches reproduced their corresponding full catalogue outputs. The default output changes exactly six fields; the optional proposal changes seven. Repeated repair makes no further changes.
 
+## Consumer demonstration
+
+The unmodified official Lasagna catalogue CLI was run on the original and six-correction snapshots: volume shapes were available for 67/71 records before and 71/71 afterward. Four missing table entries now show the correct dimensions. This demonstrates catalogue-listing completeness; it does not establish improved inference or scroll reading. The website index builder produced identical output in a separate control check.
+
+See [the reproducible experiment and integration handoff](preparation/TECHNICAL_READINESS.md), [actual CLI output](preparation/results/consumer-before-after.log), and [results](preparation/results/consumer-result.json). These supplemental materials are in the repository and do not change the v1.0.0 archive.
+
 ## Evidence and limits
 
 Measured: selected shape lookups improve from 0/4 to 4/4; selected parent lookups improve from 0/3 to 2/3 with the direct corrections, or 3/3 including the proposal. These are metadata consumer checks on actual published records, not scroll-reading accuracy or runtime benchmarks. There is no demonstrated change to VC3D rendering, segmentation, ink detection or recovered text, and no evidence of community adoption yet. Regression fault-injection tests supplement, rather than replace, the real-data check.
@@ -97,4 +103,3 @@ Implementation, tests and documentation were prepared with assistance from OpenA
 ## Licence and attribution
 
 The original code in this package is offered under the MIT licence in `LICENSE`. Third-party catalogue and Zarr metadata are attributed to Vesuvius Challenge / Scroll Prize and remain subject to their original terms. Dataset licence fields are preserved. See `NOTICE.txt` and the source URLs in `evidence/manifest.json`.
-
